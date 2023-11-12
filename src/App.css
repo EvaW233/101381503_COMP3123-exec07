@@ -1,0 +1,34 @@
+.App {
+  text-align: center;
+}
+
+.blue-frame {
+  background-color: white;
+  border: 8px solid transparent;
+  padding: 20px;
+  margin: 50px; 
+  display: inline-block;
+  position: relative;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 10px 0;
+}
+
+
+.blue-frame::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border: 10px solid transparent; 
+  z-index: -1;
+  box-shadow: 0 0 20px 5px #61DAFB; 
+}
